@@ -35,7 +35,7 @@ spring:
     #    password: **** JAVA_OPTS=-Dspring.profile="test"
     #    url
     password: ali # 100% ,ciphers ===>  devs will encrypt this usig spring
-    url: jdbc:mysql://104.154.158.66:3306:3306/learnerCrownClothing?useSSL=FALSE
+    url: jdbc:mysql://104.154.158.66:3306/learnerCrownClothing?useSSL=FALSE
     username: root
   jpa:
     hibernate:
