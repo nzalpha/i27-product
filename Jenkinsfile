@@ -3,7 +3,7 @@
 
 pipeline {
     agent {
-        label 'k8-slave'
+        label 'K8-slave'
     }
     tools {
         maven 'mvn 3.8'
