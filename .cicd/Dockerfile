@@ -2,12 +2,12 @@
 # Base image 
 
 FROM openjdk:18.0.2.1-jdk
-RUN mkdir -p /opt/i27/
+RUN mkdir -p /opt/ali/
 ARG JAR_SOURCE
-WORKDIR /opt/i27/
-COPY ["${JAR_SOURCE}", "/opt/i27/i27cart-product.jar"]
-RUN chmod 777 /opt/i27/
+WORKDIR /opt/ali/
+COPY ["${JAR_SOURCE}", "/opt/ali/cart-product.jar"]
+RUN chmod 777 /opt/ali/
 EXPOSE 8132
-CMD ["java", "-jar", "/opt/i27/i27cart-product.jar"]
+CMD ["java", "-jar", "/opt/ali/cart-product.jar"]
 
 # /opt/i27/i27cart-product.jar > will be in the container 
