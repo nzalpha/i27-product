@@ -10,7 +10,7 @@ spring:
       on-profile: local
   datasource:
     #    password: ****
-    #    url
+    #    url:
     password: root
     url: jdbc:mysql://34.171.47.197:3306/product_managment?useSSL=FALSE
     username: root
