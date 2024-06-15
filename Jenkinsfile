@@ -3,7 +3,11 @@
 
 pipeline {
     agent {
-        label 'k8s-slave'
+        label 'k8-slave'
+    }
+    tools {
+        maven 'mvn 3.8'
+        jdk 'jdk-17'
     }
     parameters {
         choice (name: 'buildOnly',
@@ -35,10 +39,7 @@ pipeline {
                description: "This will deploy the app to Prod Env"
         )
     }
-    tools {
-        maven 'Maven-3.8.8'
-        jdk 'JDK-17'
-    }
+  
     environment {
         APPLICATION_NAME = "product"
         // https://www.jenkins.io/doc/pipeline/steps/pipeline-utility-steps/#readmavenpom-read-a-maven-project-file
